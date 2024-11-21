@@ -1,0 +1,13 @@
+.btn{
+    background-color: $color-Dark-gray-blue;
+    border-radius: 5rem;
+    width: 100%;
+    text-align: center;
+    padding-block: 1.6rem;
+    font-size: 1.6rem;
+    color: $color-White;
+    margin-top: 2rem;
+    &:hover{
+        background: linear-gradient(to bottom,$color-Light-slate-blue-background,$color-Light-royal-blue-background );
+    }
+}

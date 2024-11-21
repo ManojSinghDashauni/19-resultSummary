@@ -1,0 +1,31 @@
+.card{
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $color-White;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 2rem 0.2em;
+    height:350px;
+    width: 350px;
+    background: linear-gradient(to bottom,$color-Light-slate-blue-background,$color-Light-royal-blue-background );
+    @media only screen and (max-width: $bp-mobile) {
+        flex: 1;
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    &__circle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+        margin-block: 2rem;
+        background: linear-gradient(to bottom,$color-Violet-blue-circle,$color-Persian-blue-circle );
+    }
+}

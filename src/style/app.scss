@@ -1,0 +1,93 @@
+// COLOR VARIABLES
+$color-Light-red: hsl(0, 100%, 67%);
+$color-Orangey-yellow: hsl(39, 100%, 56%);
+$color-Green-teal: hsl(166, 100%, 37%);
+$color-Cobalt-blue: hsl(234, 85%, 45%);
+
+$color-White: hsl(0, 0%, 100%);
+$color-Pale-blue: hsl(221, 100%, 96%);
+$color-Light-lavender: hsl(241, 100%, 89%);
+$color-Dark-gray-blue: hsl(224, 30%, 27%);
+
+// ## Gradients
+
+$color-Light-slate-blue-background: hsl(252, 100%, 67%);
+$color-Light-royal-blue-background: hsl(241, 81%, 54%);
+
+$color-Violet-blue-circle: hsla(256, 72%, 46%, 1);
+$color-Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+@font-face {
+    font-family: HankenBold;
+    src: url(../assets/fonts/static/HankenGrotesk-Bold.ttf);
+}
+
+@font-face {
+    font-family: HankenExtraBold;
+    src: url(../assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: HankenMedium;
+    src: url(../assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+
+
+// FONT VARIABLES
+
+$width:140rem;
+$innerWidth:9.25rem;
+$gutterGap:3.2rem;
+
+$bp-tb: 48em;     // 768px
+$bp-mobile: 24.4375em;    // 375px
+
+
+
+
+@import "./typography";
+@import "./card.scss";
+@import "./data.scss";
+@import "./btn.scss";
+
+
+html{
+    font-size: 62.25%;
+
+    font-family: "Hanken Grotesk", sans-serif;
+
+}
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-White;
+    line-height: 1.2;
+    @media only screen and (max-width: $bp-mobile) {
+        height: 100svh;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    box-shadow: 0rem 0rem 1rem  $color-Light-lavender;
+    border-radius: 2rem;
+    @media only screen and (max-width: $bp-mobile) {
+        flex-direction: column;
+        width: auto;
+    }
+}
